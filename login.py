@@ -78,46 +78,46 @@ class Login_page:
     def changes(self):
         self.showsecond()
         num = input("enter")
-#         while num not in self.one_two_three:
-#             os.system("cls")
-#             self.showsecond()
-#             num = input("enter")
-#         if num == self.one_two_three[0]:
-#             self.change_log_passw()
-#         elif num == self.one_two_three[1]:
-#             self.log_out()
-#         elif num == self.one_two_three[2]:
-#             self.del_acc(self.login)
-#
-#     def change_log_passw(self):
-#         self.over()
-#
-#     def show_third(self):
-#         print("""Choose on of them :
-#             1) change login
-#             2) change password
-#             3) change login and password
-#         """)
-#
-#     def over(self):
-#         self.show_third()
-#         num = input("enter")
-#         if num == self.one_two_three[0]:
-#             self.change_login()
-#         elif num == self.one_two_three[1]:
-#             self.change_password()
-#         elif num == self.one_two_three[2]:
-#             self.change_login_password()
-#
-#     def change_login(self):
-#         new_login = input("Enter new login :").strip()
-#         while not new_login:
-#             os.system("cls")
-#             new_login = input("Enter new login :").strip()
-#         change = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
+        while num not in self.one_two_three:
+            os.system("cls")
+            self.showsecond()
+            num = input("enter")
+        if num == self.one_two_three[0]:
+            self.change_log_passw()
+        elif num == self.one_two_three[1]:
+            self.log_out()
+        elif num == self.one_two_three[2]:
+            self.del_acc(self.login)
+
+    def change_log_passw(self):
+        self.over()
+
+    def show_third(self):
+        print("""Choose on of them :
+            1) change login
+            2) change password
+            3) change login and password
+        """)
+
+    def over(self):
+        self.show_third()
+        num = input("enter")
+        if num == self.one_two_three[0]:
+            self.change_login()
+        elif num == self.one_two_three[1]:
+            self.change_password()
+        elif num == self.one_two_three[2]:
+            self.change_login_password()
+
+    def change_login(self):
+        new_login = input("Enter new login :").strip()
+        while not new_login:
+            os.system("cls")
+            new_login = input("Enter new login :").strip()
+        change = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
 #             database="login_page"
 #         )
 #         project = change.cursor()
