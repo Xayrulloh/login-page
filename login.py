@@ -37,47 +37,47 @@ class Login_page:
             login = input("enter your login :").strip()
         print("your name -->", name)
         print("your login -->", login)
-#         age = input("enter your age :").strip()
-#         while not age.isdigit():
-#             os.system("cls")
-#             age = input("enter your age :").strip()
-#         age = int(age)
-#         print("your name -->", name)
-#         print("your login -->", login)
-#         print("your age -->", age)
-#         password = input("enter your password :").strip()
-#         while not password.isdigit():
-#             os.system("cls")
-#             password = input("enter your password :").strip()
-#         password = int(password)
-#         print("your name -->", name)
-#         print("your login -->", login)
-#         print("your age -->", age)
-#         print("your password -->", password)
-#         self.write_sql(name, login, age, password)
-#
-#     def loginn(self):
-#         login = input("enter your login :").strip()
-#         while not self.isfalse(login):
-#             os.system("cls")
-#             login = input("enter your login :").strip()
-#         self.login = login
-#         password = input("enter your password :").strip()
-#         while not self.passw(password):
-#             os.system("cls")
-#             password = input("enter your password :").strip()
-#         self.changes()
-#
-#     def showsecond(self):
-#         print("""Choose on of this
-#             1) change login/password
-#             2) log out
-#             3) delete account
-#         """)
-#
-#     def changes(self):
-#         self.showsecond()
-#         num = input("enter")
+        age = input("enter your age :").strip()
+        while not age.isdigit():
+            os.system("cls")
+            age = input("enter your age :").strip()
+        age = int(age)
+        print("your name -->", name)
+        print("your login -->", login)
+        print("your age -->", age)
+        password = input("enter your password :").strip()
+        while not password.isdigit():
+            os.system("cls")
+            password = input("enter your password :").strip()
+        password = int(password)
+        print("your name -->", name)
+        print("your login -->", login)
+        print("your age -->", age)
+        print("your password -->", password)
+        self.write_sql(name, login, age, password)
+
+    def loginn(self):
+        login = input("enter your login :").strip()
+        while not self.isfalse(login):
+            os.system("cls")
+            login = input("enter your login :").strip()
+        self.login = login
+        password = input("enter your password :").strip()
+        while not self.passw(password):
+            os.system("cls")
+            password = input("enter your password :").strip()
+        self.changes()
+
+    def showsecond(self):
+        print("""Choose on of this
+            1) change login/password
+            2) log out
+            3) delete account
+        """)
+
+    def changes(self):
+        self.showsecond()
+        num = input("enter")
 #         while num not in self.one_two_three:
 #             os.system("cls")
 #             self.showsecond()
