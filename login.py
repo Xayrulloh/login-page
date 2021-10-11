@@ -118,41 +118,41 @@ class Login_page:
             host="localhost",
             user="root",
             passwd="12345678",
-#             database="login_page"
-#         )
-#         project = change.cursor()
-#         project.execute(f"update login set login='{new_login}' where login='{self.login}'")
-#         change.commit()
-#
-#     def change_password(self):
-#         new_password = input("Enter new password :").strip()
-#         while not new_password.isdigit():
-#             os.system("cls")
-#             new_password = input("Enter new password :").strip()
-#         new_password = int(new_password)
-#         change = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
-#             database="login_page"
-#         )
-#         project = change.cursor()
-#         project.execute(f"update login set password='{new_password}' where login='{self.login}'")
-#         change.commit()
-#     def change_login_password(self):
-#         self.change_password()
-#         self.change_login()
-#     def log_out(self):
-#         self.log_reg()
-#
-#     def del_acc(self, login):
-#         delet = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
-#             database="login_page"
-#         )
-#         project = delet.cursor()
+            database="login_page"
+        )
+        project = change.cursor()
+        project.execute(f"update login set login='{new_login}' where login='{self.login}'")
+        change.commit()
+
+    def change_password(self):
+        new_password = input("Enter new password :").strip()
+        while not new_password.isdigit():
+            os.system("cls")
+            new_password = input("Enter new password :").strip()
+        new_password = int(new_password)
+        change = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
+            database="login_page"
+        )
+        project = change.cursor()
+        project.execute(f"update login set password='{new_password}' where login='{self.login}'")
+        change.commit()
+    def change_login_password(self):
+        self.change_password()
+        self.change_login()
+    def log_out(self):
+        self.log_reg()
+
+    def del_acc(self, login):
+        delet = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
+            database="login_page"
+        )
+        project = delet.cursor()
 #         project.execute(f"delete from login where login ='{login}'")
 #         delet.commit()
 #
