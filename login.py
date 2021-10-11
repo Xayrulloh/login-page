@@ -153,61 +153,61 @@ class Login_page:
             database="login_page"
         )
         project = delet.cursor()
-#         project.execute(f"delete from login where login ='{login}'")
-#         delet.commit()
-#
-#
-#     def passw(self, password):
-#         to_str = self.result[0][4]
-#         to_str = str(to_str)
-#         if password == to_str:
-#             return True
-#         return False
-#
-#     def isfalse(self, login):
-#         isfalse = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
-#             database="login_page"
-#         )
-#         vazifa = isfalse.cursor()
-#         false = f"select * from login where login ='{login}'"
-#         vazifa.execute(false)
-#         result = vazifa.fetchall()
-#         self.result = result
-#         if result:
-#             return True
-#         return False
-#
-#     def istrue(self, login):
-#         istrue = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
-#             database="login_page"
-#         )
-#         vazifa = istrue.cursor()
-#         true = f"select * from login where login = '{login}'"
-#         vazifa.execute(true)
-#         result = vazifa.fetchall()
-#         if result:
-#             return False
-#         return True
-#
-#     def write_sql(self, name, login, age, password):
-#         reg = mysql.connector.connect(
-#             host="localhost",
-#             user="root",
-#             passwd="12345678",
-#             database="login_page"
-#         )
-#         project = reg.cursor()
-#         project.execute(f"insert into login(name, login, age, password) values('{name}', '{login}', '{age}', '{password}')")
-#         reg.commit()
-#
-#
-# Xayulloh = Login_page()
+        project.execute(f"delete from login where login ='{login}'")
+        delet.commit()
+
+
+    def passw(self, password):
+        to_str = self.result[0][4]
+        to_str = str(to_str)
+        if password == to_str:
+            return True
+        return False
+
+    def isfalse(self, login):
+        isfalse = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
+            database="login_page"
+        )
+        vazifa = isfalse.cursor()
+        false = f"select * from login where login ='{login}'"
+        vazifa.execute(false)
+        result = vazifa.fetchall()
+        self.result = result
+        if result:
+            return True
+        return False
+
+    def istrue(self, login):
+        istrue = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
+            database="login_page"
+        )
+        vazifa = istrue.cursor()
+        true = f"select * from login where login = '{login}'"
+        vazifa.execute(true)
+        result = vazifa.fetchall()
+        if result:
+            return False
+        return True
+
+    def write_sql(self, name, login, age, password):
+        reg = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="12345678",
+            database="login_page"
+        )
+        project = reg.cursor()
+        project.execute(f"insert into login(name, login, age, password) values('{name}', '{login}', '{age}', '{password}')")
+        reg.commit()
+
+
+Xayulloh = Login_page()
 
 
 
